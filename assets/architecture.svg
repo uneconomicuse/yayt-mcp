@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" width="100%" height="100%">
+  <defs>
+    <style>
+      .mono { font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, sans-serif; }
+    </style>
+    <marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M 0 0 L 6 3 L 0 6 Z" fill="#58A6FF" />
+    </marker>
+    <marker id="arrowGreen" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+      <path d="M 0 0 L 6 3 L 0 6 Z" fill="#3FB950" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="220" rx="8" fill="#0D1117" stroke="#30363D" stroke-width="1"/>
+
+  <!-- Block 1: AI Clients -->
+  <g transform="translate(32, 32)">
+    <rect width="220" height="156" rx="6" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+    <text x="16" y="28" fill="#F0F6FC" class="sans" font-size="12" font-weight="700">MCP CLIENTS &amp; AGENTS</text>
+    <line x1="16" y1="38" x2="204" y2="38" stroke="#21262D" stroke-width="1"/>
+    <text x="16" y="62" fill="#8B949E" class="mono" font-size="11">Claude Code</text>
+    <text x="16" y="84" fill="#8B949E" class="mono" font-size="11">Cursor / Windsurf</text>
+    <text x="16" y="106" fill="#8B949E" class="mono" font-size="11">Google Antigravity</text>
+    <text x="16" y="128" fill="#8B949E" class="mono" font-size="11">OpenAI Codex / SDK</text>
+    <text x="16" y="150" fill="#8B949E" class="mono" font-size="11">Hermes / OpenCode</text>
+  </g>
+
+  <!-- Connector 1 -->
+  <path d="M 252 110 L 328 110" stroke="#58A6FF" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <rect x="262" y="90" width="56" height="16" rx="3" fill="#21262D" stroke="#30363D" stroke-width="1"/>
+  <text x="290" y="102" fill="#58A6FF" class="mono" font-size="9" font-weight="600" text-anchor="middle">STDIO</text>
+
+  <!-- Block 2: Gateway -->
+  <g transform="translate(336, 32)">
+    <rect width="248" height="156" rx="6" fill="#161B22" stroke="#58A6FF" stroke-width="1.5"/>
+    <text x="16" y="28" fill="#58A6FF" class="sans" font-size="12" font-weight="700">yayt-mcp GATEWAY</text>
+    <line x1="16" y1="38" x2="232" y2="38" stroke="#21262D" stroke-width="1"/>
+    
+    <text x="16" y="62" fill="#F0F6FC" class="mono" font-size="11">FastMCP Engine (27 tools)</text>
+    <text x="16" y="84" fill="#3FB950" class="mono" font-size="11">Zero Hard-Delete Guard</text>
+    <text x="16" y="106" fill="#8B949E" class="mono" font-size="11">Automated OR Normalizer</text>
+    <text x="16" y="128" fill="#8B949E" class="mono" font-size="11">Cross-LLM Templates</text>
+    <text x="16" y="150" fill="#8B949E" class="mono" font-size="11">Async HTTP/2 Connection</text>
+  </g>
+
+  <!-- Connector 2 -->
+  <path d="M 584 110 L 640 110" stroke="#3FB950" stroke-width="1.5" marker-end="url(#arrowGreen)"/>
+  <rect x="588" y="90" width="48" height="16" rx="3" fill="#21262D" stroke="#30363D" stroke-width="1"/>
+  <text x="612" y="102" fill="#3FB950" class="mono" font-size="9" font-weight="600" text-anchor="middle">HTTP/2</text>
+
+  <!-- Block 3: YouTrack API -->
+  <g transform="translate(648, 32)">
+    <rect width="220" height="156" rx="6" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+    <text x="16" y="28" fill="#F0F6FC" class="sans" font-size="12" font-weight="700">JETBRAINS YOUTRACK</text>
+    <line x1="16" y1="38" x2="204" y2="38" stroke="#21262D" stroke-width="1"/>
+    <text x="16" y="62" fill="#8B949E" class="mono" font-size="11">/api/articles (Docs)</text>
+    <text x="16" y="84" fill="#8B949E" class="mono" font-size="11">/api/issues (Tasks)</text>
+    <text x="16" y="106" fill="#8B949E" class="mono" font-size="11">/api/commands (State)</text>
+    <text x="16" y="128" fill="#8B949E" class="mono" font-size="11">/api/workItems (Time)</text>
+    <text x="16" y="150" fill="#8B949E" class="mono" font-size="11">/api/agile (Boards)</text>
+  </g>
+</svg>

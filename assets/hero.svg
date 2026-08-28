@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 160" width="100%" height="100%">
+  <defs>
+    <style>
+      .mono { font-family: 'JetBrains Mono', 'Fira Code', Consolas, ui-monospace, monospace; }
+      .sans { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, system-ui, sans-serif; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="160" rx="8" fill="#0D1117" stroke="#30363D" stroke-width="1"/>
+
+  <!-- Logo Mark (YouTrack Square / FastMCP Bridge) -->
+  <g transform="translate(48, 40)">
+    <rect width="80" height="80" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1.5"/>
+    <path d="M 22 28 L 38 44 L 22 60" fill="none" stroke="#58A6FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="42" y1="60" x2="58" y2="60" stroke="#3FB950" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <!-- Brand Typography -->
+  <text x="156" y="76" fill="#F0F6FC" class="sans" font-size="34" font-weight="800" letter-spacing="-0.5">yayt-mcp</text>
+  <text x="156" y="104" fill="#8B949E" class="sans" font-size="15" font-weight="400">Yet Another YouTrack MCP server</text>
+
+  <!-- Spec Badges on Right -->
+  <g transform="translate(680, 52)">
+    <rect width="170" height="26" rx="4" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+    <text x="85" y="17" fill="#8B949E" class="mono" font-size="11" text-anchor="middle">PROTOCOL: MCP (STDIO)</text>
+
+    <rect y="34" width="170" height="26" rx="4" fill="#161B22" stroke="#238636" stroke-width="1"/>
+    <text x="85" y="51" fill="#3FB950" class="mono" font-size="11" text-anchor="middle">ZERO HARD-DELETE</text>
+  </g>
+</svg>
