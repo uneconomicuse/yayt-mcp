@@ -30,15 +30,39 @@ Built on Python 3.10+ with FastMCP and an asynchronous HTTP/2 client (`httpx`), 
 
 ---
 
-## Installation
+## Requirements
 
-Install the package via standard `pip`:
+* **Python:** `3.10` or higher (`python --version`)
+* **Git:** Available in system PATH
+* **YouTrack:** Cloud or Self-Hosted (Server) with a [Permanent Token](https://www.jetbrains.com/help/youtrack/cloud/manage-permanent-token.html)
 
+---
+
+## Installation & Management
+
+### Install
 ```bash
 pip install git+https://github.com/uneconomicuse/yayt-mcp.git
 ```
+*After installation, the server executable **`yayt-mcp`** is globally available.*
 
-After installation, the server command **`yayt-mcp`** becomes available globally.
+### Update / Reinstall
+To pull the latest updates or refresh binaries:
+```bash
+pip install --upgrade --force-reinstall git+https://github.com/uneconomicuse/yayt-mcp.git
+```
+
+### Uninstall
+To completely remove the server from your system:
+```bash
+pip uninstall yayt-mcp -y
+```
+
+### Verify
+```bash
+# Check if the command is found in PATH:
+yayt-mcp --help
+```
 
 ---
 

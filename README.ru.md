@@ -30,15 +30,39 @@
 
 ---
 
-## Установка
+## Системные требования
 
-Установите пакет через стандартный `pip`:
+* **Python:** `3.10` или выше (`python --version`)
+* **Git:** Установлен и доступен в системном PATH
+* **YouTrack:** Облачный (Cloud) или Серверный (Self-Hosted) с выпущенным [постоянным токеном](https://www.jetbrains.com/help/youtrack/cloud/manage-permanent-token.html)
 
+---
+
+## Установка и управление
+
+### Установка
 ```bash
 pip install git+https://github.com/uneconomicuse/yayt-mcp.git
 ```
+*После установки исполняемый файл **`yayt-mcp`** становится доступен глобально в вашей системе.*
 
-После установки серверная команда **`yayt-mcp`** становится доступна глобально в системе.
+### Обновление и переустановка
+Чтобы подтянуть последние обновления или пересоздать бинарники:
+```bash
+pip install --upgrade --force-reinstall git+https://github.com/uneconomicuse/yayt-mcp.git
+```
+
+### Удаление
+Чтобы полностью удалить MCP-сервер из системы:
+```bash
+pip uninstall yayt-mcp -y
+```
+
+### Проверка
+```bash
+# Проверка доступности команды:
+yayt-mcp --help
+```
 
 ---
 
